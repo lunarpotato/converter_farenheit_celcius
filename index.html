@@ -10,10 +10,16 @@
     <h1>Temperatur Umrechner</h1>
   </header>
   <body>
-    <section id="events">  
-      <input type="text">
-      <button> Umrechnen </button> 
-      <input type="text">
+    <section id="events" class="container"> 
+      <p :class="putInResult">
+        <input type="text">
+        °C
+      </p>
+       <button> Umrechnen </button> 
+       <p :class="putInResult">
+         <input type="text">
+         °F
+      </p>
     </section>
   </body>
 </html>

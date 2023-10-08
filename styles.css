@@ -13,6 +13,20 @@ header {
     text-align: center;
 }
 
+h1 {
+    font-weight: lighter;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-grow: 4;
+    flex-shrink: 3;
+}
+
+
 #events {
     text-align: center;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
@@ -21,7 +35,7 @@ header {
 }
 input {
     border:1px solid rgb(99, 141, 99);
-    margin: 2rem;
+    margin: 0.1rem;
     padding: 0.25rem;
     font-weight: lighter;
 }
@@ -39,12 +53,24 @@ button {
     border-radius: 20px;
     padding: 0.5rem 0.75rem;
     margin: 0.1rem;
+    margin-left: 1.1rem;
+    margin-right: 1.1rem;
     cursor: pointer;
+    min-width: auto;
+    max-width: 7rem;
+    min-height: auto;
+    max-height: 2rem;
+
 }
 button:hover {
     background-color: rgb(131, 197, 131);
 }
 
-@media (max-width: 726px) {
-    
-}
+p {
+  font-size: 1rem;
+  font-weight:lighter;
+  border:#ffffff00;
+  background-color: #ffffff00;
+  padding: 0.5rem 0.75rem;
+  margin: 0.1rem;
+} 
