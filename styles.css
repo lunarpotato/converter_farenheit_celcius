@@ -21,6 +21,7 @@ h1 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    flex-basis:auto;
     align-items: center;
     flex-grow: 4;
     flex-shrink: 3;

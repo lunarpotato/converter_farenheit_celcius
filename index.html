@@ -12,16 +12,25 @@
     <h1>Temperatur Umrechner</h1>
   </header>
   <body>
-    <section id="events" class="container"> 
-      <p :class="putInResult">
-        <input type="text">
-        °C
-      </p>
-       <button> Umrechnen </button> 
-       <p :class="putInResult">
-         <input type="text">
-         °F
-      </p>
-    </section>
+    <div id="events">
+      <section class="container"> 
+        <p>
+        <input type="number" v-model="celciusInput">
+        </p>
+        <button v-on:click="convertToFahrenheit">
+        Umrechnen
+        </button> 
+        <p>= {{fahrenheitResult}}°F</p>
+        
+        <p>
+        <input type="number" v-model="fahrenheitInput">
+        </p>
+        <button 
+        v-on:click="convertToCelsius"> 
+        Umrechnen
+        </button> 
+        <p>= {{celsiusResult}}°C</p>
+      </section>
+    </div>
   </body>
 </html>
