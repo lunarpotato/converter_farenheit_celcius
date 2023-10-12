@@ -5,7 +5,7 @@ const app = Vue.createApp({
             fahrenheitInput:'',
             celsiusResult:0,
             fahrenheitResult:0,
-            isInputValid: true,
+            
         };
     },
 
@@ -16,7 +16,7 @@ const app = Vue.createApp({
                 this.fahrenheitResult= this.celsiusInput *1.8 +32;
                 resultParagraph.textContent = this.fahrenheitResult + '°F';}
             else {
-                resultParagraph.textContent = "Please insert a Number!"  
+                alert("Please insert a Number!")  
             }
         },
 
