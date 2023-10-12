@@ -15,21 +15,26 @@
     <div id="events">
       <section class="container"> 
         <p>
-        <input type="number" v-model="celciusInput">
+        <input type="number" v-model="celsiusInput">
+        °C
         </p>
-        <button v-on:click="convertToFahrenheit">
+        <button 
+        v-on:click="convertToFahrenheit">
         Umrechnen
         </button> 
-        <p>= {{fahrenheitResult}}°F</p>
-        
+        <p id="resultParagraph"></p>
+      </section>
+
+      <section class="container">
         <p>
         <input type="number" v-model="fahrenheitInput">
+        °F
         </p>
         <button 
         v-on:click="convertToCelsius"> 
         Umrechnen
         </button> 
-        <p>= {{celsiusResult}}°C</p>
+        <p id="resultParagraphB"></p>
       </section>
     </div>
   </body>
